@@ -1,16 +1,16 @@
-<a href="http://bestwebsoft.com/products/freenity/" target=_blank>Freenity</a>
+<a href="http://bestweblayout.com/products/freenity/" target=_blank>Freenity</a>
 ==============================
 
 Freenity is an excellent choice for photographers, freelancers, startups, personal portfolios, landing pages and blogs. Its stylish and modern design is the best way to stand out from the crowd and get more visitors from Google and other search engines. Freenity is simple, easy to use and fast. Moreover, it uses the best clean SEO practices. This professional and elegant theme is great for anyone looking to display a lot of content in a userfriendly and clean manner.
 
-<img src="http://bestwebsoft.com/wp-content/uploads/2015/06/freenity-wp-banner.jpg" />
+<img src="http://bestweblayout.com/wp-content/uploads/2015/06/freenity-wp-banner-588x300.jpg" />
 
-<a href="http://bestwebsoft.com/products/freenity/#description" target=_blank>Description</a> | 
-<a href="http://bestwebsoft.com/products/freenity/#installation" target=_blank>Installation</a> | 
-<a href="http://bestwebsoft.com/products/freenity/#faq" target=_blank>FAQ</a> | 
-<a href="http://bestwebsoft.com/products/freenity/#screenshots" target=_blank>Screenshots</a> | 
-<a href="http://bestwebsoft.com/products/freenity/#changelog" target=_blank>Changelog</a> | 
-<a href="http://bestwebsoft.com/products/freenity/#download" target=_blank>Download</a>
+<a href="http://bestweblayout.com/products/freenity/#description" target=_blank>Description</a> | 
+<a href="http://bestweblayout.com/products/freenity/#installation" target=_blank>Installation</a> | 
+<a href="http://bestweblayout.com/products/freenity/#faq" target=_blank>FAQ</a> | 
+<a href="http://bestweblayout.com/products/freenity/#screenshots" target=_blank>Screenshots</a> | 
+<a href="http://bestweblayout.com/products/freenity/#changelog" target=_blank>Changelog</a> | 
+<a href="http://bestweblayout.com/products/freenity/#download" target=_blank>Download</a>
 
 
 Features
