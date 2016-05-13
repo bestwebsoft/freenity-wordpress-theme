@@ -2,8 +2,8 @@
 Contributors: BestWebLayout, BestWebSoft
 Tags: white, gray, blue, light, two-columns, right-sidebar, custom-menu, featured-images, post-formats, sticky-post, translation-ready
 Requires at least: 4.2
-Tested up to: 4.5
-Stable tag: 1.2
+Tested up to: 4.5.1
+Stable tag: 1.3
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Freenity WordPress Theme, Copyright 2016 BestWebLayout.com
@@ -11,7 +11,7 @@ Freenity is distributed under the terms of the GNU GPL
 
 == Description ==
 
-Freenity is an excellent choice for photographers, freelancers, startups, personal portfolios, landing pages and blogs. Its stylish and modern design is the best way to stand out from the crowd and get more visitors from Google and other search engines. Theme is also powered by Font Awesome. Freenity is simple, easy to use and fast. This professional and elegant theme is great for anyone looking to display a lot of content in a userfriendly and clean manner. Live demo: http://bestweblayout.com/wordpress_demo_theme/freenity/
+Freenity is an excellent choice for photographers, freelancers, startups, personal portfolios, landing pages and blogs. Its stylish and modern design is the best way to stand out from the crowd and get more visitors from Google and other search engines. Theme is also powered by Font Awesome. Freenity is simple, easy to use and fast. This professional and elegant theme is great for anyone looking to display a lot of content in a userfriendly and clean manner. Live demo: http://wp-demo-theme.bestweblayout.com/freenity/
 
 = Features =
 
@@ -106,13 +106,15 @@ Change the language in the admin settings screen. Settings > General > Site Lang
 
 == Changelog ==
 
-= V1.2 - 19.04.2016 =
+= V1.3 - 04.05.2016 =
+* Update: html5.js file was replaced with full file version.
+
+= V1.2 - 27.04.2016 =
 * Bugfix: The code in the functions.php file was fixed.
 * Bugfix: The code in the header.php file was fixed.
-* Update: html5.js file was replaced with full file version.
 * Update: All themes settings were transferred to customizer.
 * Update: Licences for pictures were updated in readme.txt.
-* Update: The theme has been tested for the compatibility with WordPress v.4.5.
+* Update: The theme has been tested for the compatibility with WordPress v.4.5.1.
 
 = V1.1 - 24.03.2016 =
 * Update: Theme URI has been changed.
@@ -122,8 +124,11 @@ Change the language in the admin settings screen. Settings > General > Site Lang
 
 == Upgrade Notice ==
 
+= V1.3 =
+html5.js file was replaced with full file version.
+
 = V1.2 =
-The code in the functions.php file was fixed. The code in the header.php file was fixed. html5.js file was replaced with full file version. All themes settings were transferred to customizer. Licences for pictures were updated in readme.txt. The theme has been tested for the compatibility with WordPress v.4.5.
+The code in the functions.php file was fixed. The code in the header.php file was fixed. All themes settings were transferred to customizer. Licences for pictures were updated in readme.txt. The theme has been tested for the compatibility with WordPress v.4.5.1.
 
 = V1.1 =
 Theme URI has been changed.

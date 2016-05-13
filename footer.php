@@ -23,7 +23,7 @@
 			<div class="freenity-footer-down">
 				<div class="freenity-copyright">
 					<p><?php _e( 'Copyright', 'freenity' ); ?>
-						<a href="<?php echo esc_url( wp_get_theme()->get( 'AuthorURI' ) ); ?>">BestWebSoft</a> <?php _e( 'and', 'freenity' ); ?>
+						<a href="<?php echo esc_url( wp_get_theme()->get( 'AuthorURI' ) ); ?>">BestWebLayout</a> <?php _e( 'and', 'freenity' ); ?>
 						<a href="<?php echo esc_url( 'http://wordpress.org/' ); ?>">WordPress</a></p>
 					<p>&copy;<?php echo date( 'Y' ) . '&nbsp;';
 						bloginfo( 'name' ); ?></p>
