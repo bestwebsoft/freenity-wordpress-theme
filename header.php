@@ -24,15 +24,17 @@
 			<header>
 				<div class="freenity-site-logo">
 					<h1 class="freenity-site-title">
-						<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
-							<?php if ( function_exists( 'the_custom_logo' ) ) {
-								if ( has_custom_logo() ) {
-									the_custom_logo();
-								}
-							} elseif ( get_theme_mod( 'freenity_logo_header' ) ) { ?>
+						<?php if ( function_exists( 'the_custom_logo' ) ) {
+							if ( has_custom_logo() ) {
+								the_custom_logo();
+							}
+						} elseif ( get_theme_mod( 'freenity_logo_header' ) ) { ?>
+							<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
 								<img src='<?php echo get_theme_mod( 'freenity_logo_header' ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' />
-							<?php }
-							bloginfo( 'name' ); ?>
+							</a>
+						<?php } ?>
+						<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
+							<?php bloginfo( 'name' ); ?>
 						</a>
 					</h1>
 				</div>

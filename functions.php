@@ -87,22 +87,10 @@ function freenity_thumbnail_caption() {
 	echo get_post_field( 'post_excerpt', get_post_thumbnail_id() );
 }
 
-/* Add information about the author */
-function freenity_wptuts_contact_methods( $contactmethods ) {
-	/* Add some useful ones */
-	$contactmethods['facebook']   = __( 'Facebook Profile URL', 'freenity' );
-	$contactmethods['twitter']    = __( 'Twitter Username', 'freenity' );
-	$contactmethods['googleplus'] = __( 'Google+ Profile URL', 'freenity' );
-	$contactmethods['instagram']  = __( 'Instagram Profile URL', 'freenity' );
-	$contactmethods['RSS']        = __( 'RSS Profile URL', 'freenity' );
-
-	return $contactmethods;
-}
-
 /* Breadcrumb navigation */
 function freenity_breadcrumb() {
 	if ( ! is_front_page() ) {
-		echo '<span class = "home"><a href="' . home_url() . '">' . __( 'Home', 'freenity' ) . ' ' . '</a></span>&#8226;' . ' ';
+		echo '<span class = "home"><a href="' . esc_url( home_url() ) . '">' . __( 'Home', 'freenity' ) . ' ' . '</a></span>&#8226;' . ' ';
 		if ( is_category() || is_single() ) {
 			the_category( ', ' );
 			if ( is_single() ) {
@@ -125,7 +113,7 @@ function freenity_date_permalink( $post ) {
 		$month          = get_the_date( 'm' );
 		$date_permalink = get_month_link( $year, $month );
 	}
-	echo $date_permalink;
+	echo esc_url( $date_permalink );
 }
 
 /* Post navigation */
@@ -220,58 +208,6 @@ function freenity_comment( $comment, $args, $depth ) {
 	}
 }
 
-/* Freenity Text widget with Logo */
-
-class Freenity_Description_Text extends WP_Widget {
-	public function __construct() {
-		parent::__construct(
-			'freenity_description_text',
-			__( 'Freenity Description Text', 'freenity' ),
-			array( 'description' => __( 'Freenity Text widget with Logo', 'freenity' ) )
-		);
-	}
-
-	public function widget( $args, $instance ) {
-		$text = apply_filters( 'widget_text', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
-		echo $args['before_widget']; ?>
-		<div class="freenity-site-logo">
-			<h1 class="freenity-site-title">
-				<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
-					<?php if ( get_theme_mod( 'freenity_logo_footer' ) ) { ?>
-						<img src='<?php echo esc_url( get_theme_mod( 'freenity_logo_footer' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' />
-					<?php }
-					bloginfo( 'name' ); ?>
-				</a>
-			</h1>
-		</div>
-		<div class="textwidget"><?php echo ! empty( $instance['filter'] ) ? wpautop( $text ) : $text; ?></div>
-		<?php echo $args['after_widget'];
-	}
-
-	public function update( $new_instance, $old_instance ) {
-		$instance = $old_instance;
-		if ( current_user_can( 'unfiltered_html' ) ) {
-			$instance['text'] = $new_instance['text'];
-		} else {
-			$instance['text'] = stripslashes( wp_filter_post_kses( addslashes( $new_instance['text'] ) ) );
-		}
-		$instance['filter'] = ! empty( $new_instance['filter'] );
-
-		return $instance;
-	}
-
-	public function form( $instance ) {
-		$instance = wp_parse_args( (array) $instance, array( 'text' => '' ) );
-		$text     = esc_textarea( $instance['text'] ); ?>
-		<p><label for="<?php echo $this->get_field_id( 'text' ); ?>"><?php _e( 'Content:', 'freenity' ); ?></label>
-			<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id( 'text' ); ?>" name="<?php echo $this->get_field_name( 'text' ); ?>"><?php echo $text; ?></textarea>
-		</p>
-		<p>
-			<input id="<?php echo $this->get_field_id( 'filter' ); ?>" name="<?php echo $this->get_field_name( 'filter' ); ?>" type="checkbox" <?php checked( isset( $instance['filter'] ) ? $instance['filter'] : 0 ); ?> />&nbsp;<label for="<?php echo $this->get_field_id( 'filter' ); ?>"><?php _e( 'Automatically add paragraphs', 'freenity' ); ?></label>
-		</p>
-	<?php }
-}
-
 /* Adds Freenity Recent Posts widget. */
 
 class Freenity_Recent_Posts extends WP_Widget {
@@ -311,10 +247,10 @@ class Freenity_Recent_Posts extends WP_Widget {
 					$r->the_post(); ?>
 					<li>
 						<div class="sidebar-recent-post">
-							<a href="<?php the_permalink(); ?>">
+							<a href="<?php echo esc_url( get_the_permalink() ); ?>">
 								<span class="recent-title"><?php the_post_thumbnail( 'freenity_widget_thumbnail' ); ?></span>
 							</a>
-							<a href="<?php the_permalink(); ?>">
+							<a href="<?php echo esc_url( get_the_permalink() ); ?>">
 								<?php get_the_title() ? the_title() : the_ID(); ?>
 							</a>
 							<br />
@@ -357,123 +293,9 @@ class Freenity_Recent_Posts extends WP_Widget {
 	<?php }
 }
 
-/*    Tabber Widget   */
-
-class Freenity_Tabber_Widget extends WP_Widget {
-	function Freenity_Tabber_Widget() {
-		$widget_ops = array(
-			'classname'   => __( 'Freenity Tabber Widget', 'freenity' ),
-			'description' => __( 'Simple jQuery Tabber Widget', 'freenity' ),
-		);
-		parent::__construct(
-			'Freenity_Tabber_Widget',
-			'Freenity Tabber Widget',
-			$widget_ops
-		);
-	}
-
-	public function widget( $args, $instance ) {
-		$title_left   = apply_filters( 'widget_title_left', empty( $instance['title_left'] ) ? '' : $instance['title_left'], $instance, $this->id_base );
-		$title_center = apply_filters( 'widget_title_center', empty( $instance['title_center'] ) ? '' : $instance['title_center'], $instance, $this->id_base );
-		$title_right  = apply_filters( 'widget_title_righ', empty( $instance['title_right'] ) ? '' : $instance['title_right'], $instance, $this->id_base );
-		$text_left    = apply_filters( 'widget_text_left', empty( $instance['text_left'] ) ? '' : $instance['text_left'], $instance );
-		$text_right   = apply_filters( 'widget_text_righ', empty( $instance['text_right'] ) ? '' : $instance['text_right'], $instance );
-		$text_center  = apply_filters( 'widget_text_center', empty( $instance['text_center'] ) ? '' : $instance['text_center'], $instance ); ?>
-		<div class="freenity-tabs-widget">
-			<ul class="freenity-tabs">
-				<li class="active">
-					<?php if ( ! empty( $title_left ) ) {
-						echo $title_left;
-					} ?>
-				</li>
-				<li>
-					<?php if ( ! empty( $title_center ) ) {
-						echo $title_center;
-					} ?>
-				</li>
-				<li>
-					<?php if ( ! empty( $title_right ) ) {
-						echo $title_right;
-					} ?>
-				</li>
-			</ul>
-			<div class="freenity-tab-container">
-				<div class="freenity-tab-content active"><?php echo ! empty( $instance['filter'] ) ? wpautop( $text_left ) : $text_left; ?></div>
-				<div class="freenity-tab-content"><?php echo ! empty( $instance['filter'] ) ? wpautop( $text_center ) : $text_center; ?></div>
-				<div class="freenity-tab-content"><?php echo ! empty( $instance['filter'] ) ? wpautop( $text_right ) : $text_right; ?></div>
-			</div>
-		</div> <!-- .tabs-widget -->
-		<div class="clear"></div>
-	<?php }
-
-	public function update( $new_instance, $old_instance ) {
-		$instance                 = $old_instance;
-		$instance['title_left']   = $new_instance['title_left'];
-		$instance['title_center'] = $new_instance['title_center'];
-		$instance['title_right']  = $new_instance['title_right'];
-		if ( current_user_can( 'unfiltered_html' ) ) {
-			$instance['text_left']   = $new_instance['text_left'];
-			$instance['text_center'] = $new_instance['text_center'];
-			$instance['text_right']  = $new_instance['text_right'];
-		} else {
-			$instance['text_left']   = stripslashes( wp_filter_post_kses( addslashes( $new_instance['text_left'] ) ) );
-			$instance['text_center'] = stripslashes( wp_filter_post_kses( addslashes( $new_instance['text_center'] ) ) );
-			$instance['text_right']  = stripslashes( wp_filter_post_kses( addslashes( $new_instance['text_right'] ) ) );
-		}
-		$instance['filter'] = ! empty( $new_instance['filter'] );
-
-		return $instance;
-	}
-
-	public function form( $instance ) {
-		$instance     = wp_parse_args( (array) $instance, array(
-			'title_left'   => '',
-			'title_center' => '',
-			'title_right'  => '',
-			'text_left'    => '',
-			'text_center'  => '',
-			'text_right'   => '',
-		) );
-		$title_left   = $instance['title_left'];
-		$text_left    = esc_textarea( $instance['text_left'] );
-		$title_center = $instance['title_center'];
-		$text_center  = esc_textarea( $instance['text_center'] );
-		$title_right  = $instance['title_right'];
-		$text_right   = esc_textarea( $instance['text_right'] ); ?>
-
-		<p><label for="<?php echo $this->get_field_id( 'title_left' ); ?>"><?php _e( 'Title left:', 'freenity' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'title_left' ); ?>" name="<?php echo $this->get_field_name( 'title_left' ); ?>" type="text" value="<?php echo esc_attr( $title_left ); ?>" />
-		</p>
-		<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id( 'text_left' ); ?>" name="<?php echo $this->get_field_name( 'text_left' ); ?>" title="<?php echo $text_left; ?>"><?php echo $text_left; ?></textarea>
-		<p>
-			<input id="<?php echo $this->get_field_id( 'filter' ); ?>" name="<?php echo $this->get_field_name( 'filter' ); ?>" type="checkbox" <?php checked( isset( $instance['filter'] ) ? $instance['filter'] : 0 ); ?> />&nbsp;<label for="<?php echo $this->get_field_id( 'filter' ); ?>"><?php _e( 'Automatically add paragraphs', 'freenity' ); ?></label>
-		</p>
-
-		<p>
-			<label for="<?php echo $this->get_field_id( 'title_center' ); ?>"><?php _e( 'Title center:', 'freenity' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'title_center' ); ?>" name="<?php echo $this->get_field_name( 'title_center' ); ?>" type="text" value="<?php echo esc_attr( $title_center ); ?>" />
-		</p>
-		<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id( 'text_center' ); ?>" name="<?php echo $this->get_field_name( 'text_center' ); ?>" title="<?php echo $text_center; ?>"><?php echo $text_center; ?></textarea>
-		<p>
-			<input id="<?php echo $this->get_field_id( 'filter' ); ?>" name="<?php echo $this->get_field_name( 'filter' ); ?>" type="checkbox" <?php checked( isset( $instance['filter'] ) ? $instance['filter'] : 0 ); ?> />&nbsp;<label for="<?php echo $this->get_field_id( 'filter' ); ?>"><?php _e( 'Automatically add paragraphs', 'freenity' ); ?></label>
-		</p>
-
-		<p>
-			<label for="<?php echo $this->get_field_id( 'title_right' ); ?>"><?php _e( 'Title right:', 'freenity' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'title_right' ); ?>" name="<?php echo $this->get_field_name( 'title_right' ); ?>" type="text" value="<?php echo esc_attr( $title_right ); ?>" />
-		</p>
-		<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id( 'text_right' ); ?>" name="<?php echo $this->get_field_name( 'text_right' ); ?>" title="<?php echo $text_right; ?>"><?php echo $text_right; ?></textarea>
-		<p>
-			<input id="<?php echo $this->get_field_id( 'filter' ); ?>" name="<?php echo $this->get_field_name( 'filter' ); ?>" type="checkbox" <?php checked( isset( $instance['filter'] ) ? $instance['filter'] : 0 ); ?> />&nbsp;<label for="<?php echo $this->get_field_id( 'filter' ); ?>"><?php _e( 'Automatically add paragraphs', 'freenity' ); ?></label>
-		</p>
-	<?php }
-}
-
 /* Registration widget */
 function freenity_register_widget() {
-	register_widget( 'Freenity_Description_Text' );
 	register_widget( 'Freenity_Recent_Posts' );
-	register_widget( 'Freenity_Tabber_Widget' );
 }
 
 /* Сonclusion sidebar */
@@ -519,7 +341,7 @@ function freenity_scripts() {
 /* Add excerpt */
 function freenity_excerpt_more( $more ) {
 	global $post;
-	return '<br /><a href="' . get_permalink( $post->ID ) . '">' . __( 'Read More...', 'freenity' ) . '</a>';
+	return '<br /><a href="' . esc_url( get_permalink( $post->ID ) ) . '">' . __( 'Read More...', 'freenity' ) . '</a>';
 }
 
 /* Excerpt lenght */
@@ -573,7 +395,7 @@ function freenity_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting( 'freenity_facebook_link', array(
 		'type'              => 'option',
-		'sanitize_callback' => 'esc_url',
+		'sanitize_callback' => 'esc_url_raw',
 		'default'           => '',
 	) );
 
@@ -592,7 +414,7 @@ function freenity_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting( 'freenity_twitter_link', array(
 		'type'              => 'option',
-		'sanitize_callback' => 'esc_url',
+		'sanitize_callback' => 'esc_url_raw',
 		'default'           => '',
 	) );
 
@@ -611,7 +433,7 @@ function freenity_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting( 'freenity_googleplus_link', array(
 		'type'              => 'option',
-		'sanitize_callback' => 'esc_url',
+		'sanitize_callback' => 'esc_url_raw',
 		'default'           => '',
 	) );
 
@@ -667,7 +489,7 @@ function freenity_contact_data() {
 		<?php }
 		if ( ! empty( $freenity_theme_option['email'] ) ) { ?>
 			<li class="freenity-e-mail">
-				<a href="mailto:<?php echo $freenity_theme_option['email']; ?>"><i class="fa fa-envelope"></i></a>
+				<a href="<?php echo esc_url( 'mailto:' . $freenity_theme_option['email'] ); ?>"><i class="fa fa-envelope"></i></a>
 			</li>
 		<?php } ?>
 	</ul>
@@ -687,15 +509,6 @@ function freenity_password_form() {
 	return $o;
 }
 
-if ( ! function_exists( '_wp_render_title_tag' ) ) {
-	function freenity_render_title() { ?>
-		<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<?php }
-
-	add_action( 'wp_head', 'freenity_render_title' );
-}
-
-add_filter( 'user_contactmethods', 'freenity_wptuts_contact_methods' );
 add_filter( 'the_password_form', 'freenity_password_form' );
 add_action( 'customize_register', 'freenity_customize_register', 11 );
 add_action( 'freenity_contact_data', 'freenity_contact_data' );

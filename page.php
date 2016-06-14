@@ -21,7 +21,7 @@ get_header(); ?>
 							the_post(); ?>
 							<div <?php post_class(); ?>>
 								<h2 class="title-article">
-									<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+									<?php the_title(); ?>
 								</h2>
 								<div class="freenity-entry">
 									<span class="freenity-edit"><?php edit_post_link( __( 'Edit', 'freenity' ) ); ?> </span>

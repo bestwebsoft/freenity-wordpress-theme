@@ -22,8 +22,7 @@ get_header(); ?>
 							the_post(); ?>
 							<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<h2 class="title-article">
-									<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php echo __( 'Permalink to', 'freenity' ) . ' ';
-									the_title_attribute(); ?>"><?php the_title(); ?></a>
+									<a href="<?php echo esc_url( get_the_permalink() ); ?>" rel="bookmark" title="<?php the_title_attribute( array( 'before' => __( 'Permalink to ', 'freenity' ), 'after' => '' ) ); ?>"><?php the_title(); ?></a>
 								</h2>
 								<div class="freenity-entry">
 									<span class="freenity-author"><?php the_author_posts_link(); ?></span>

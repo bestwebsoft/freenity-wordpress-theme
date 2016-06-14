@@ -22,11 +22,14 @@
 			</div>
 			<div class="freenity-footer-down">
 				<div class="freenity-copyright">
-					<p><?php _e( 'Copyright', 'freenity' ); ?>
-						<a href="<?php echo esc_url( wp_get_theme()->get( 'AuthorURI' ) ); ?>">BestWebLayout</a> <?php _e( 'and', 'freenity' ); ?>
-						<a href="<?php echo esc_url( 'http://wordpress.org/' ); ?>">WordPress</a></p>
-					<p>&copy;<?php echo date( 'Y' ) . '&nbsp;';
-						bloginfo( 'name' ); ?></p>
+					<p>
+						<?php printf(
+							__( 'Copyright &copy; %1$s %2$s. Designed by %3$s', 'freenity' ),
+							date_i18n( 'Y' ),
+							get_bloginfo( 'name' ),
+							'<a href="' . esc_url( wp_get_theme()->get( 'AuthorURI' ) ) . '">BestWebLayout</a>'
+        ); ?>
+					</p>
 				</div>
 				<?php do_action( 'freenity_contact_data' ); ?>
 			</div>

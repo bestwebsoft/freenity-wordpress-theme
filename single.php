@@ -16,8 +16,8 @@ get_header(); ?>
 							the_post(); ?>
 							<div <?php post_class(); ?>>
 								<h2 class="title-article">
-									<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php echo __( 'Permalink to', 'freenity' ) . '&nbsp;';
-									the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+									<?php the_title(); ?>
+								</h2>
 								<div class="freenity-entry">
 									<span class="freenity-author"><?php the_author_posts_link(); ?></span>
 									<span class="freenity-entry-date"><a href="<?php freenity_date_permalink( $post ); ?>"><?php echo '&nbsp;- ' . get_the_date(); ?></a></span>

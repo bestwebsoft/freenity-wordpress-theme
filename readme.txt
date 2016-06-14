@@ -1,9 +1,10 @@
 === Freenity ===
 Contributors: BestWebLayout, BestWebSoft
-Tags: white, gray, blue, light, two-columns, right-sidebar, custom-menu, featured-images, post-formats, sticky-post, translation-ready
+Author URI: http://bestweblayout.com/
+Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, footer-widgets, post-formats, sticky-post, threaded-comments, theme-options, translation-ready
 Requires at least: 4.2
-Tested up to: 4.5.1
-Stable tag: 1.3
+Tested up to: 4.5.2
+Stable tag: 1.4
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Freenity WordPress Theme, Copyright 2016 BestWebLayout.com
@@ -27,7 +28,7 @@ Freenity is an excellent choice for photographers, freelancers, startups, person
 
 * Russian (ru_RU)
 
-If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> to <a href="http://support.bestweblayout.com" target="_blank">BestWebLayout</a>, and we'll add it to the plugin. You can download the latest version of the program for working with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> to <a href="http://support.bestweblayout.com" target="_blank">BestWebLayout</a>, and we'll add it to the plugin. You can download the latest version of the program for working with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 = Copyrights for Resources used in this theme =
 
@@ -84,7 +85,7 @@ Freenity WordPress theme supports only these post formats. Please style them in 
 = Widgets =
 
 The Theme includes a standard Widget. The following widgets are shown by default: recent posts, recent comments, archives, categories.
-Also added to this topic widgets such as Freenity Description Text - Freenity Text widget with Logo footer, Freenity Recent Posts - Widget recent posts for freenity theme display featured image, Freenity Tabber Widget - Simple jQuery Text Tabber Widget.
+Also added to this topic widget such as Freenity Recent Posts - Widget recent posts for freenity theme display featured image.
 
 == Frequently Asked Questions ==
 
@@ -106,6 +107,12 @@ Change the language in the admin settings screen. Settings > General > Site Lang
 
 == Changelog ==
 
+= V1.4 - 14.06.2016 =
+* Update: Security of saved and displayed data has been improved.
+* Update: Back-compatibility of title-tag was removed.
+* Bugfix: Plugin Territory functionality was removed.
+* Update: The theme has been tested for the compatibility with WordPress v.4.5.2.
+
 = V1.3 - 04.05.2016 =
 * Update: html5.js file was replaced with full file version.
 
@@ -123,6 +130,9 @@ Change the language in the admin settings screen. Settings > General > Site Lang
 * Release of Freenity theme
 
 == Upgrade Notice ==
+
+= V1.4 =
+Security of saved and displayed data has been improved. Back-compatibility of title-tag was removed. Plugin Territory functionality was removed. The theme has been tested for the compatibility with WordPress v.4.5.2.
 
 = V1.3 =
 html5.js file was replaced with full file version.

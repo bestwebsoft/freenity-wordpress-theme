@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Freenity\n"
-"POT-Creation-Date: 2016-04-19 15:04+0300\n"
-"PO-Revision-Date: 2016-04-19 15:04+0300\n"
+"POT-Creation-Date: 2016-06-14 12:41+0300\n"
+"PO-Revision-Date: 2016-06-14 12:45+0300\n"
 "Last-Translator: \n"
 "Language-Team: bestwebsoft.com <wp_theme@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -25,31 +25,31 @@ msgstr "Ошибка 404"
 msgid "The page you are looking for is not found. Maybe try a search?"
 msgstr "Страница, которую Вы ищите, не найдена. Попробуйте использовать поиск."
 
-#: archive.php:25 image.php:20 index.php:19 search.php:20 single.php:19
-msgid "Permalink to"
-msgstr "Ссылка на"
+#: archive.php:25 image.php:20 index.php:19 search.php:20
+msgid "Permalink to "
+msgstr "Ссылка на "
 
-#: archive.php:31 archive.php:60 functions.php:176 functions.php:186
-#: functions.php:198 image.php:25 index.php:24 index.php:54 page.php:27
-#: page.php:53 search.php:25 search.php:52 single.php:24 single.php:50
+#: archive.php:30 archive.php:59 functions.php:164 functions.php:174
+#: functions.php:186 image.php:24 index.php:23 index.php:53 page.php:27
+#: page.php:53 search.php:24 search.php:51 single.php:24 single.php:50
 msgid "Edit"
 msgstr "Редактировать"
 
-#: archive.php:49 index.php:45 page.php:44 search.php:43 single.php:41
+#: archive.php:48 index.php:44 page.php:44 search.php:42 single.php:41
 msgid "In"
 msgstr "В"
 
-#: archive.php:54 index.php:48 page.php:47 search.php:46 single.php:44
+#: archive.php:53 index.php:47 page.php:47 search.php:45 single.php:44
 msgid "Posted by"
 msgstr "Опубликовано"
 
-#: archive.php:56 index.php:50 page.php:49 search.php:48 single.php:46
+#: archive.php:55 index.php:49 page.php:49 search.php:47 single.php:46
 msgid "on"
 msgstr "в "
 
-#: archive.php:58 index.php:52 page.php:51 search.php:50 single.php:48
+#: archive.php:57 index.php:51 page.php:51 search.php:49 single.php:48
 msgid "in"
-msgstr " в"
+msgstr "в"
 
 #: comments.php:18
 #, php-format
@@ -77,7 +77,7 @@ msgstr "Комментарии закрыты."
 
 #: comments.php:50
 msgid "Name:"
-msgstr "Имя"
+msgstr "Имя:"
 
 #: comments.php:51
 msgid "Please enter your full name..."
@@ -93,11 +93,11 @@ msgstr "Пожалуйста, введите Вашу электронную п�
 
 #: comments.php:54
 msgid "Website:"
-msgstr "Веб-сайт"
+msgstr "Веб-сайт:"
 
 #: comments.php:55
 msgid "Please enter your website url..."
-msgstr " Пожалуйста, введите ссылку на ваш сайт..."
+msgstr "Пожалуйста, введите ссылку на ваш сайт..."
 
 #: comments.php:60
 msgid "Post comment"
@@ -147,13 +147,10 @@ msgid ""
 msgstr ""
 "Похоже, мы не можем найти то что Вы ищите. Возможно, Вам поможет поиск."
 
-#: footer.php:25
-msgid "Copyright"
-msgstr "Авторские права"
-
-#: footer.php:26
-msgid "and"
-msgstr "и"
+#: footer.php:27
+#, php-format
+msgid "Copyright &copy; %1$s %2$s. Designed by %3$s"
+msgstr "Копирайт &copy; %1$s %2$s. Разработано %3$s"
 
 #: functions.php:65
 msgid "Primary Menu"
@@ -163,144 +160,88 @@ msgstr "Основное меню"
 msgid "Secondary Menu"
 msgstr "Дополнительное Меню"
 
-#: functions.php:93
-msgid "Facebook Profile URL"
-msgstr "Ссылка на профиль в Facebook"
-
-#: functions.php:94
-msgid "Twitter Username"
-msgstr "Имя пользователя в Twitter"
-
-#: functions.php:95
-msgid "Google+ Profile URL"
-msgstr "Ссылка на профиль в Google+"
-
-#: functions.php:96
-msgid "Instagram Profile URL"
-msgstr "Ссылка на профиль в Instagram"
-
-#: functions.php:97
-msgid "RSS Profile URL"
-msgstr "Ссылка на RSS"
-
-#: functions.php:105 functions.php:116
+#: functions.php:93 functions.php:104
 msgid "Home"
 msgstr "Домашняя страница"
 
-#: functions.php:156
+#: functions.php:144
 msgid "Older posts"
 msgstr "Предыдущие записи"
 
-#: functions.php:159
+#: functions.php:147
 msgid "Newer posts"
 msgstr "Свежие записи"
 
-#: functions.php:172
+#: functions.php:160
 msgid "Pingback:"
 msgstr "Уведомление:"
 
-#: functions.php:175 functions.php:185 functions.php:197
+#: functions.php:163 functions.php:173 functions.php:185
 msgid "at"
 msgstr "в"
 
-#: functions.php:182
+#: functions.php:170
 msgid "Trackback:"
 msgstr "Обратная ссылка:"
 
-#: functions.php:217
+#: functions.php:205
 msgid "Your comment is awaiting moderation."
 msgstr "Ваш комментарий ожидает проверки."
 
-#: functions.php:229
-msgid "Freenity Description Text"
-msgstr "Текстовое описание от Freenity"
-
-#: functions.php:230
-msgid "Freenity Text widget with Logo"
-msgstr "Текстовый виджет с Логотипом от Freenity"
-
-#: functions.php:266
-msgid "Content:"
-msgstr "Содержание:"
-
-#: functions.php:270 functions.php:449 functions.php:458 functions.php:467
-msgid "Automatically add paragraphs"
-msgstr "Автоматически добавлять параграфы"
-
-#: functions.php:281
+#: functions.php:217
 msgid ""
 "Freenity Recent Posts widget which displays the featured image thumbnail"
 msgstr "Виджет свежих записей для темы Freenity с выводом миниатюры"
 
-#: functions.php:283
+#: functions.php:219
 msgid "Freenity Recent Posts"
 msgstr "Свежие записи от Freenity "
 
-#: functions.php:291
+#: functions.php:227
 msgid "Recent Posts"
 msgstr "Свежие записи"
 
-#: functions.php:346
+#: functions.php:282
 msgid "Title:"
 msgstr "Заголовок:"
 
-#: functions.php:350
+#: functions.php:286
 msgid "Number of posts to show:"
 msgstr "Количество постов для отображения:"
 
-#: functions.php:355
+#: functions.php:291
 msgid "Display the post date?"
 msgstr "Отобразить дату поста?"
 
-#: functions.php:365
-msgid "Freenity Tabber Widget"
-msgstr "Tabber Widget от Freenity"
-
-#: functions.php:366
-msgid "Simple jQuery Tabber Widget"
-msgstr "Простой Виджет  jQuery Tabber"
-
-#: functions.php:444
-msgid "Title left:"
-msgstr "Заголовок слева:"
-
-#: functions.php:453
-msgid "Title center:"
-msgstr "Заголовок по центру:"
-
-#: functions.php:462
-msgid "Title right:"
-msgstr "Заголовок справа:"
-
-#: functions.php:484
+#: functions.php:306
 msgid "Main Sidebar"
 msgstr "Главный Сайдбар"
 
-#: functions.php:486 functions.php:497
+#: functions.php:308 functions.php:319
 msgid "Widgets in this area will be shown on all posts and pages."
 msgstr "Виджеты в этой области будут показаны на всех постах и страницах."
 
-#: functions.php:495
+#: functions.php:317
 msgid "Footer Sidebar"
 msgstr "Сайдбар Подвала"
 
-#: functions.php:522
+#: functions.php:344
 msgid "Read More..."
 msgstr "Читать далее..."
 
-#: functions.php:545
+#: functions.php:367
 msgid "Logo Header"
 msgstr "Логотип Шапки"
 
-#: functions.php:556
+#: functions.php:378
 msgid "Logo Footer"
 msgstr "Логотип Подвала"
 
-#: functions.php:562
+#: functions.php:384
 msgid "Social Links"
 msgstr "Социальные ссылки"
 
-#: functions.php:564
+#: functions.php:386
 msgid ""
 "Here you can change the links to your social accounts and e-mail for "
 "feedback. It's possible to save forms empty."
@@ -308,77 +249,77 @@ msgstr ""
 "Здесь вы можете изменить ссылки на ваши профили в социальных сетях и e-mail "
 "для обратной связи. Можно сохранить пустые формы."
 
-#: functions.php:568 functions.php:581
+#: functions.php:390 functions.php:403
 msgid "Facebook Link"
 msgstr "Ссылка на профиль в Facebook"
 
-#: functions.php:570
+#: functions.php:392
 msgid "Enter you Facebook Link. E.g."
 msgstr "Введите ссылку на ваш аккаунт в Facebook. Напр."
 
-#: functions.php:587 functions.php:600
+#: functions.php:409 functions.php:422
 msgid "Twitter Link"
 msgstr "Ссылка на профиль в Twitter"
 
-#: functions.php:589
+#: functions.php:411
 msgid "Enter you Twitter link. E.g."
 msgstr "Введите ссылку на ваш аккаунт в Twitter. Напр."
 
-#: functions.php:606 functions.php:619
+#: functions.php:428 functions.php:441
 msgid "Google+ Link"
 msgstr "Ссылка на профиль в Google+"
 
-#: functions.php:608
+#: functions.php:430
 msgid "Enter your Google+ link. E.g."
 msgstr "Введите ссылку на Ваш аккаунт  Google+. Напр."
 
-#: functions.php:625
+#: functions.php:447
 msgid "E-mail"
 msgstr "Ел. почта"
 
-#: functions.php:627
+#: functions.php:449
 msgid "Enter the e-mail for feedback. E.g."
 msgstr "Введите e-mail для обратной связи. Напр."
 
-#: functions.php:638
+#: functions.php:460
 msgid "E-mail for feedback"
 msgstr "E-mail для обратной связи"
 
-#: functions.php:682
+#: functions.php:504
 msgid ""
 "This post is password protected. To view it please enter your password below:"
 msgstr ""
 "Этот пост защищен паролем. Для его просмотра введите, пожалуйста, пароль:"
 
-#: functions.php:683
+#: functions.php:505
 msgid "Password:"
 msgstr "Пароль:"
 
-#: functions.php:684
+#: functions.php:506
 msgid "Submit"
 msgstr "Отправить"
 
-#: image.php:71
+#: image.php:70
 msgid "Previous"
 msgstr "Предыдущее"
 
-#: image.php:72
+#: image.php:71
 msgid "Next"
 msgstr "Следующее"
 
-#: image.php:95 page.php:65 single.php:62
+#: image.php:94 page.php:65 single.php:62
 msgid "Author:"
 msgstr "Автор:"
 
-#: image.php:103 page.php:73 single.php:70
+#: image.php:102 page.php:73 single.php:70
 msgid "Follow"
 msgstr "Следуйте за"
 
-#: image.php:103 page.php:73 single.php:70
+#: image.php:102 page.php:73 single.php:70
 msgid "on "
-msgstr " в"
+msgstr "в "
 
-#: index.php:33 single.php:30
+#: index.php:32 single.php:30
 msgid "Read more"
 msgstr "Читать далее"
 
@@ -386,9 +327,56 @@ msgstr "Читать далее"
 msgid "Search Results for:"
 msgstr "Результаты поиска для:"
 
-#: searchform.php:9
-msgid "Search"
-msgstr "Поиск"
+#~ msgid "Copyright"
+#~ msgstr "Авторские права"
+
+#~ msgid "and"
+#~ msgstr "и"
+
+#~ msgid "Facebook Profile URL"
+#~ msgstr "Ссылка на профиль в Facebook"
+
+#~ msgid "Twitter Username"
+#~ msgstr "Имя пользователя в Twitter"
+
+#~ msgid "Google+ Profile URL"
+#~ msgstr "Ссылка на профиль в Google+"
+
+#~ msgid "Instagram Profile URL"
+#~ msgstr "Ссылка на профиль в Instagram"
+
+#~ msgid "RSS Profile URL"
+#~ msgstr "Ссылка на RSS"
+
+#~ msgid "Freenity Description Text"
+#~ msgstr "Текстовое описание от Freenity"
+
+#~ msgid "Freenity Text widget with Logo"
+#~ msgstr "Текстовый виджет с Логотипом от Freenity"
+
+#~ msgid "Content:"
+#~ msgstr "Содержание:"
+
+#~ msgid "Automatically add paragraphs"
+#~ msgstr "Автоматически добавлять параграфы"
+
+#~ msgid "Freenity Tabber Widget"
+#~ msgstr "Tabber Widget от Freenity"
+
+#~ msgid "Simple jQuery Tabber Widget"
+#~ msgstr "Простой Виджет  jQuery Tabber"
+
+#~ msgid "Title left:"
+#~ msgstr "Заголовок слева:"
+
+#~ msgid "Title center:"
+#~ msgstr "Заголовок по центру:"
+
+#~ msgid "Title right:"
+#~ msgstr "Заголовок справа:"
+
+#~ msgid "Search"
+#~ msgstr "Поиск"
 
 #~ msgid "Logo"
 #~ msgstr "Логотип"

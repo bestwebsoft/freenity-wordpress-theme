@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Freenity\n"
-"POT-Creation-Date: 2016-04-19 15:05+0300\n"
+"POT-Creation-Date: 2016-06-14 12:41+0300\n"
 "PO-Revision-Date: 2015-10-29 15:34+0300\n"
 "Last-Translator: \n"
 "Language-Team: BWS\n"
@@ -26,33 +26,32 @@ msgid "The page you are looking for is not found. Maybe try a search?"
 msgstr ""
 
 #: ../archive.php:25 ../image.php:20 ../index.php:19 ../search.php:20
-#: ../single.php:19
-msgid "Permalink to"
+msgid "Permalink to "
 msgstr ""
 
-#: ../archive.php:31 ../archive.php:60 ../functions.php:176
-#: ../functions.php:186 ../functions.php:198 ../image.php:25 ../index.php:24
-#: ../index.php:54 ../page.php:27 ../page.php:53 ../search.php:25
-#: ../search.php:52 ../single.php:24 ../single.php:50
+#: ../archive.php:30 ../archive.php:59 ../functions.php:164
+#: ../functions.php:174 ../functions.php:186 ../image.php:24 ../index.php:23
+#: ../index.php:53 ../page.php:27 ../page.php:53 ../search.php:24
+#: ../search.php:51 ../single.php:24 ../single.php:50
 msgid "Edit"
 msgstr ""
 
-#: ../archive.php:49 ../index.php:45 ../page.php:44 ../search.php:43
+#: ../archive.php:48 ../index.php:44 ../page.php:44 ../search.php:42
 #: ../single.php:41
 msgid "In"
 msgstr ""
 
-#: ../archive.php:54 ../index.php:48 ../page.php:47 ../search.php:46
+#: ../archive.php:53 ../index.php:47 ../page.php:47 ../search.php:45
 #: ../single.php:44
 msgid "Posted by"
 msgstr ""
 
-#: ../archive.php:56 ../index.php:50 ../page.php:49 ../search.php:48
+#: ../archive.php:55 ../index.php:49 ../page.php:49 ../search.php:47
 #: ../single.php:46
 msgid "on"
 msgstr ""
 
-#: ../archive.php:58 ../index.php:52 ../page.php:51 ../search.php:50
+#: ../archive.php:57 ../index.php:51 ../page.php:51 ../search.php:49
 #: ../single.php:48
 msgid "in"
 msgstr ""
@@ -137,12 +136,9 @@ msgstr ""
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: ../footer.php:25
-msgid "Copyright"
-msgstr ""
-
-#: ../footer.php:26
-msgid "and"
+#: ../footer.php:27
+#, php-format
+msgid "Copyright &copy; %1$s %2$s. Designed by %3$s"
 msgstr ""
 
 #: ../functions.php:65
@@ -153,219 +149,158 @@ msgstr ""
 msgid "Secondary Menu"
 msgstr ""
 
-#: ../functions.php:93
-msgid "Facebook Profile URL"
-msgstr ""
-
-#: ../functions.php:94
-msgid "Twitter Username"
-msgstr ""
-
-#: ../functions.php:95
-msgid "Google+ Profile URL"
-msgstr ""
-
-#: ../functions.php:96
-msgid "Instagram Profile URL"
-msgstr ""
-
-#: ../functions.php:97
-msgid "RSS Profile URL"
-msgstr ""
-
-#: ../functions.php:105 ../functions.php:116
+#: ../functions.php:93 ../functions.php:104
 msgid "Home"
 msgstr ""
 
-#: ../functions.php:156
+#: ../functions.php:144
 msgid "Older posts"
 msgstr ""
 
-#: ../functions.php:159
+#: ../functions.php:147
 msgid "Newer posts"
 msgstr ""
 
-#: ../functions.php:172
+#: ../functions.php:160
 msgid "Pingback:"
 msgstr ""
 
-#: ../functions.php:175 ../functions.php:185 ../functions.php:197
+#: ../functions.php:163 ../functions.php:173 ../functions.php:185
 msgid "at"
 msgstr ""
 
-#: ../functions.php:182
+#: ../functions.php:170
 msgid "Trackback:"
 msgstr ""
 
-#: ../functions.php:217
+#: ../functions.php:205
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../functions.php:229
-msgid "Freenity Description Text"
-msgstr ""
-
-#: ../functions.php:230
-msgid "Freenity Text widget with Logo"
-msgstr ""
-
-#: ../functions.php:266
-msgid "Content:"
-msgstr ""
-
-#: ../functions.php:270 ../functions.php:449 ../functions.php:458
-#: ../functions.php:467
-msgid "Automatically add paragraphs"
-msgstr ""
-
-#: ../functions.php:281
+#: ../functions.php:217
 msgid "Freenity Recent Posts widget which displays the featured image thumbnail"
 msgstr ""
 
-#: ../functions.php:283
+#: ../functions.php:219
 msgid "Freenity Recent Posts"
 msgstr ""
 
-#: ../functions.php:291
+#: ../functions.php:227
 msgid "Recent Posts"
 msgstr ""
 
-#: ../functions.php:346
+#: ../functions.php:282
 msgid "Title:"
 msgstr ""
 
-#: ../functions.php:350
+#: ../functions.php:286
 msgid "Number of posts to show:"
 msgstr ""
 
-#: ../functions.php:355
+#: ../functions.php:291
 msgid "Display the post date?"
 msgstr ""
 
-#: ../functions.php:365
-msgid "Freenity Tabber Widget"
-msgstr ""
-
-#: ../functions.php:366
-msgid "Simple jQuery Tabber Widget"
-msgstr ""
-
-#: ../functions.php:444
-msgid "Title left:"
-msgstr ""
-
-#: ../functions.php:453
-msgid "Title center:"
-msgstr ""
-
-#: ../functions.php:462
-msgid "Title right:"
-msgstr ""
-
-#: ../functions.php:484
+#: ../functions.php:306
 msgid "Main Sidebar"
 msgstr ""
 
-#: ../functions.php:486 ../functions.php:497
+#: ../functions.php:308 ../functions.php:319
 msgid "Widgets in this area will be shown on all posts and pages."
 msgstr ""
 
-#: ../functions.php:495
+#: ../functions.php:317
 msgid "Footer Sidebar"
 msgstr ""
 
-#: ../functions.php:522
+#: ../functions.php:344
 msgid "Read More..."
 msgstr ""
 
-#: ../functions.php:545
+#: ../functions.php:367
 msgid "Logo Header"
 msgstr ""
 
-#: ../functions.php:556
+#: ../functions.php:378
 msgid "Logo Footer"
 msgstr ""
 
-#: ../functions.php:562
+#: ../functions.php:384
 msgid "Social Links"
 msgstr ""
 
-#: ../functions.php:564
+#: ../functions.php:386
 msgid "Here you can change the links to your social accounts and e-mail for feedback. It's possible to save forms empty."
 msgstr ""
 
-#: ../functions.php:568 ../functions.php:581
+#: ../functions.php:390 ../functions.php:403
 msgid "Facebook Link"
 msgstr ""
 
-#: ../functions.php:570
+#: ../functions.php:392
 msgid "Enter you Facebook Link. E.g."
 msgstr ""
 
-#: ../functions.php:587 ../functions.php:600
+#: ../functions.php:409 ../functions.php:422
 msgid "Twitter Link"
 msgstr ""
 
-#: ../functions.php:589
+#: ../functions.php:411
 msgid "Enter you Twitter link. E.g."
 msgstr ""
 
-#: ../functions.php:606 ../functions.php:619
+#: ../functions.php:428 ../functions.php:441
 msgid "Google+ Link"
 msgstr ""
 
-#: ../functions.php:608
+#: ../functions.php:430
 msgid "Enter your Google+ link. E.g."
 msgstr ""
 
-#: ../functions.php:625
+#: ../functions.php:447
 msgid "E-mail"
 msgstr ""
 
-#: ../functions.php:627
+#: ../functions.php:449
 msgid "Enter the e-mail for feedback. E.g."
 msgstr ""
 
-#: ../functions.php:638
+#: ../functions.php:460
 msgid "E-mail for feedback"
 msgstr ""
 
-#: ../functions.php:682
+#: ../functions.php:504
 msgid "This post is password protected. To view it please enter your password below:"
 msgstr ""
 
-#: ../functions.php:683
+#: ../functions.php:505
 msgid "Password:"
 msgstr ""
 
-#: ../image.php:71
+#: ../image.php:70
 msgid "Previous"
 msgstr ""
 
-#: ../image.php:72
+#: ../image.php:71
 msgid "Next"
 msgstr ""
 
-#: ../image.php:95 ../page.php:65 ../single.php:62
+#: ../image.php:94 ../page.php:65 ../single.php:62
 msgid "Author:"
 msgstr ""
 
-#: ../image.php:103 ../page.php:73 ../single.php:70
+#: ../image.php:102 ../page.php:73 ../single.php:70
 msgid "Follow"
 msgstr ""
 
-#: ../image.php:103 ../page.php:73 ../single.php:70
+#: ../image.php:102 ../page.php:73 ../single.php:70
 msgid "on "
 msgstr ""
 
-#: ../index.php:33 ../single.php:30
+#: ../index.php:32 ../single.php:30
 msgid "Read more"
 msgstr ""
 
 #: ../search.php:15
 msgid "Search Results for:"
-msgstr ""
-
-#: ../searchform.php:9
-msgid "Search"
 msgstr ""
