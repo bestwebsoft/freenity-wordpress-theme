@@ -105,17 +105,6 @@ function freenity_breadcrumb() {
 	}
 }
 
-/* Archive link */
-function freenity_date_permalink( $post ) {
-	$date_permalink = get_permalink();
-	if ( is_single() ) {
-		$year           = get_the_date( 'Y' );
-		$month          = get_the_date( 'm' );
-		$date_permalink = get_month_link( $year, $month );
-	}
-	echo esc_url( $date_permalink );
-}
-
 /* Post navigation */
 function freenity_post_nav() {
 	global $post;

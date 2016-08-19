@@ -19,8 +19,7 @@ get_header(); ?>
 								<h2 class="title-article">
 									<a href="<?php echo esc_url( get_the_permalink() ); ?>" rel="bookmark" title="<?php the_title_attribute( array( 'before' => __( 'Permalink to ', 'freenity' ), 'after' => '' ) ); ?>"><?php the_title(); ?></a></h2>
 								<div class="freenity-entry">
-									<span class="freenity-author"><?php the_author_posts_link(); ?></span>
-									<span class="freenity-entry-date"><a href="<?php freenity_date_permalink( $post ); ?>"><?php echo '&nbsp;- ' . get_the_date(); ?></a></span>
+									<span class="freenity-author"><?php the_author_posts_link(); ?></span>&nbsp;-&nbsp;<span class="freenity-entry-date"><a href="<?php echo esc_url( get_the_permalink() ); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_date(); ?></a></span>
 									<span class="freenity-edit"><?php edit_post_link( ' | ' . __( 'Edit', 'freenity' ) ); ?> </span>
 									<div class="freenity-post-image"> <?php the_post_thumbnail(); ?> </div>
 									<?php if ( has_post_thumbnail() ) {
@@ -104,30 +103,36 @@ get_header(); ?>
 											<li>
 												<a class="freenity-facebook-link" href="<?php echo esc_url( get_the_author_meta( 'facebook' ) ); ?>">
 													<i class="fa fa-facebook-square"></i>
-												</a></li>
-										<?php } ?>
-										<?php if ( get_the_author_meta( 'twitter' ) != '' ) { ?>
+												</a>
+											</li>
+										<?php }
+										if ( get_the_author_meta( 'twitter' ) != '' ) { ?>
 											<li>
 												<a class="freenity-twitter-link" href="https://twitter.com/<?php echo wp_kses( get_the_author_meta( 'twitter' ), null ); ?>">
 													<i class="fa fa-twitter"></i>
-												</a></li>
-										<?php } ?>
-										<?php if ( get_the_author_meta( 'googleplus' ) != '' ) { ?>
+												</a>
+											</li>
+										<?php }
+										if ( get_the_author_meta( 'googleplus' ) != '' ) { ?>
 											<li>
 												<a class="freenity-google-link" href="<?php echo esc_url( get_the_author_meta( 'googleplus' ) ); ?>">
 													<i class="fa fa-google-plus"></i>
-												</a></li>
-										<?php } ?>
-										<?php if ( get_the_author_meta( 'instagram' ) != '' ) { ?>
+												</a>
+											</li>
+										<?php }
+										if ( get_the_author_meta( 'instagram' ) != '' ) { ?>
 											<li>
 												<a class="freenity-instagram-link" href="<?php echo esc_url( get_the_author_meta( 'instagram' ) ); ?>">
 													<i class="fa fa-instagram"></i>
-												</a></li>
-										<?php } ?>
-										<?php if ( get_the_author_meta( 'RSS' ) != '' ) { ?>
-											<li><a class="freenity-rss-link" href="<?php echo esc_url( get_the_author_meta( 'RSS' ) ); ?>">
+												</a>
+											</li>
+										<?php }
+										if ( get_the_author_meta( 'RSS' ) != '' ) { ?>
+											<li>
+												<a class="freenity-rss-link" href="<?php echo esc_url( get_the_author_meta( 'RSS' ) ); ?>">
 													<i class="fa fa-rss"></i>
-												</a></li>
+												</a>
+											</li>
 										<?php } ?>
 									</ul>
 								</div> <!--.freenity-profile-links-->

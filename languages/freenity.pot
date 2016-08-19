@@ -1,306 +1,318 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Freenity\n"
-"POT-Creation-Date: 2016-06-14 12:41+0300\n"
-"PO-Revision-Date: 2015-10-29 15:34+0300\n"
-"Last-Translator: \n"
-"Language-Team: BWS\n"
-"Language: en_EN\n"
+"Project-Id-Version: Freenity v1.5\n"
+"POT-Creation-Date: 2016-08-19 17:51+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: BestWebSoft <wp_theme@bestwebsoft.com>\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.4\n"
-"X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;"
+"_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Language: en_US\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: ../404.php:14
+#: 404.php:14
 msgid "Error 404"
 msgstr ""
 
-#: ../404.php:15
+#: 404.php:15
 msgid "The page you are looking for is not found. Maybe try a search?"
 msgstr ""
 
-#: ../archive.php:25 ../image.php:20 ../index.php:19 ../search.php:20
+#: archive.php:25 image.php:20 index.php:19 search.php:20
 msgid "Permalink to "
 msgstr ""
 
-#: ../archive.php:30 ../archive.php:59 ../functions.php:164
-#: ../functions.php:174 ../functions.php:186 ../image.php:24 ../index.php:23
-#: ../index.php:53 ../page.php:27 ../page.php:53 ../search.php:24
-#: ../search.php:51 ../single.php:24 ../single.php:50
+#: archive.php:30 archive.php:63 functions.php:164 functions.php:174 functions.php:186 image.php:24 index.php:23
+#: index.php:59 page.php:27 page.php:50 search.php:24 search.php:57 single.php:24 single.php:56
 msgid "Edit"
 msgstr ""
 
-#: ../archive.php:48 ../index.php:44 ../page.php:44 ../search.php:42
-#: ../single.php:41
+#: archive.php:51 index.php:48 search.php:46 single.php:45
 msgid "In"
 msgstr ""
 
-#: ../archive.php:53 ../index.php:47 ../page.php:47 ../search.php:45
-#: ../single.php:44
+#: archive.php:57 index.php:53 page.php:44 search.php:51 single.php:50
 msgid "Posted by"
 msgstr ""
 
-#: ../archive.php:55 ../index.php:49 ../page.php:49 ../search.php:47
-#: ../single.php:46
+#: archive.php:59 index.php:55 page.php:46 search.php:53 single.php:52
 msgid "on"
 msgstr ""
 
-#: ../archive.php:57 ../index.php:51 ../page.php:51 ../search.php:49
-#: ../single.php:48
+#: archive.php:61 index.php:57 page.php:48 search.php:55 single.php:54
 msgid "in"
 msgstr ""
 
-#: ../comments.php:28
+#: comments.php:18
+#, php-format
+msgid "One response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:27
 msgid "Reply"
 msgstr ""
 
-#: ../comments.php:39
+#: comments.php:37
 msgid "Previous Comments"
 msgstr ""
 
-#: ../comments.php:40
+#: comments.php:38
 msgid "Next Comments"
 msgstr ""
 
-#: ../comments.php:45
+#: comments.php:43
 msgid "Comments are closed."
 msgstr ""
 
-#: ../comments.php:50
+#: comments.php:48
 msgid "Name:"
 msgstr ""
 
-#: ../comments.php:51
+#: comments.php:49
 msgid "Please enter your full name..."
 msgstr ""
 
-#: ../comments.php:52
+#: comments.php:50
 msgid "Email:"
 msgstr ""
 
-#: ../comments.php:53
+#: comments.php:51
 msgid "Please enter your email address..."
 msgstr ""
 
-#: ../comments.php:54
+#: comments.php:52
 msgid "Website:"
 msgstr ""
 
-#: ../comments.php:55
+#: comments.php:53
 msgid "Please enter your website url..."
 msgstr ""
 
-#: ../comments.php:60
+#: comments.php:58
 msgid "Post comment"
 msgstr ""
 
-#: ../comments.php:62
+#: comments.php:60
 msgid "Leave a Reply"
 msgstr ""
 
-#: ../comments.php:64
+#: comments.php:62
 msgid "Your email address will not be published. Required fields are marked"
 msgstr ""
 
-#: ../comments.php:68
+#: comments.php:66
 msgid "Comment:"
 msgstr ""
 
-#: ../comments.php:69
+#: comments.php:67
 msgid "Please enter your message..."
 msgstr ""
 
-#: ../content-none.php:12
+#: content-none.php:12
 msgid "Nothing Found"
 msgstr ""
 
-#: ../content-none.php:15
+#: content-none.php:15
 msgid "Ready to publish your first post?"
 msgstr ""
 
-#: ../content-none.php:15
+#: content-none.php:15
 msgid "Get started here."
 msgstr ""
 
-#: ../content-none.php:17
+#: content-none.php:17
 msgid "Sorry, but nothing matched your search terms. Please try again with different keywords."
 msgstr ""
 
-#: ../content-none.php:20
+#: content-none.php:20
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: ../footer.php:27
+#: footer.php:27
 #, php-format
 msgid "Copyright &copy; %1$s %2$s. Designed by %3$s"
 msgstr ""
 
-#: ../functions.php:65
+#: functions.php:65
 msgid "Primary Menu"
 msgstr ""
 
-#: ../functions.php:66
+#: functions.php:66
 msgid "Secondary Menu"
 msgstr ""
 
-#: ../functions.php:93 ../functions.php:104
+#: functions.php:93 functions.php:104
 msgid "Home"
 msgstr ""
 
-#: ../functions.php:144
+#: functions.php:144
 msgid "Older posts"
 msgstr ""
 
-#: ../functions.php:147
+#: functions.php:147
 msgid "Newer posts"
 msgstr ""
 
-#: ../functions.php:160
+#: functions.php:160
 msgid "Pingback:"
 msgstr ""
 
-#: ../functions.php:163 ../functions.php:173 ../functions.php:185
+#: functions.php:163 functions.php:173 functions.php:185
 msgid "at"
 msgstr ""
 
-#: ../functions.php:170
+#: functions.php:170
 msgid "Trackback:"
 msgstr ""
 
-#: ../functions.php:205
+#: functions.php:205
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../functions.php:217
+#: functions.php:217
 msgid "Freenity Recent Posts widget which displays the featured image thumbnail"
 msgstr ""
 
-#: ../functions.php:219
+#: functions.php:219
 msgid "Freenity Recent Posts"
 msgstr ""
 
-#: ../functions.php:227
+#: functions.php:227
 msgid "Recent Posts"
 msgstr ""
 
-#: ../functions.php:282
+#: functions.php:282
 msgid "Title:"
 msgstr ""
 
-#: ../functions.php:286
+#: functions.php:286
 msgid "Number of posts to show:"
 msgstr ""
 
-#: ../functions.php:291
+#: functions.php:291
 msgid "Display the post date?"
 msgstr ""
 
-#: ../functions.php:306
+#: functions.php:306
 msgid "Main Sidebar"
 msgstr ""
 
-#: ../functions.php:308 ../functions.php:319
+#: functions.php:308 functions.php:319
 msgid "Widgets in this area will be shown on all posts and pages."
 msgstr ""
 
-#: ../functions.php:317
+#: functions.php:317
 msgid "Footer Sidebar"
 msgstr ""
 
-#: ../functions.php:344
+#: functions.php:344
 msgid "Read More..."
 msgstr ""
 
-#: ../functions.php:367
+#: functions.php:367
 msgid "Logo Header"
 msgstr ""
 
-#: ../functions.php:378
+#: functions.php:378
 msgid "Logo Footer"
 msgstr ""
 
-#: ../functions.php:384
+#: functions.php:384
 msgid "Social Links"
 msgstr ""
 
-#: ../functions.php:386
+#: functions.php:386
 msgid "Here you can change the links to your social accounts and e-mail for feedback. It's possible to save forms empty."
 msgstr ""
 
-#: ../functions.php:390 ../functions.php:403
+#: functions.php:390 functions.php:403
 msgid "Facebook Link"
 msgstr ""
 
-#: ../functions.php:392
+#: functions.php:392
 msgid "Enter you Facebook Link. E.g."
 msgstr ""
 
-#: ../functions.php:409 ../functions.php:422
+#: functions.php:409 functions.php:422
 msgid "Twitter Link"
 msgstr ""
 
-#: ../functions.php:411
+#: functions.php:411
 msgid "Enter you Twitter link. E.g."
 msgstr ""
 
-#: ../functions.php:428 ../functions.php:441
+#: functions.php:428 functions.php:441
 msgid "Google+ Link"
 msgstr ""
 
-#: ../functions.php:430
+#: functions.php:430
 msgid "Enter your Google+ link. E.g."
 msgstr ""
 
-#: ../functions.php:447
+#: functions.php:447
 msgid "E-mail"
 msgstr ""
 
-#: ../functions.php:449
+#: functions.php:449
 msgid "Enter the e-mail for feedback. E.g."
 msgstr ""
 
-#: ../functions.php:460
+#: functions.php:460
 msgid "E-mail for feedback"
 msgstr ""
 
-#: ../functions.php:504
+#: functions.php:504
 msgid "This post is password protected. To view it please enter your password below:"
 msgstr ""
 
-#: ../functions.php:505
+#: functions.php:505
 msgid "Password:"
 msgstr ""
 
-#: ../image.php:70
+#: functions.php:506
+msgid "Submit"
+msgstr ""
+
+#: image.php:70
 msgid "Previous"
 msgstr ""
 
-#: ../image.php:71
+#: image.php:71
 msgid "Next"
 msgstr ""
 
-#: ../image.php:94 ../page.php:65 ../single.php:62
+#: image.php:94 page.php:62 single.php:68
 msgid "Author:"
 msgstr ""
 
-#: ../image.php:102 ../page.php:73 ../single.php:70
+#: image.php:102 page.php:70 single.php:76
 msgid "Follow"
 msgstr ""
 
-#: ../image.php:102 ../page.php:73 ../single.php:70
+#: image.php:102 page.php:70 single.php:76
 msgid "on "
 msgstr ""
 
-#: ../index.php:32 ../single.php:30
+#: index.php:32 single.php:30
 msgid "Read more"
 msgstr ""
 
-#: ../search.php:15
+#: search.php:15
 msgid "Search Results for:"
+msgstr ""
+
+#: searchform.php:9
+msgid "Search"
 msgstr ""

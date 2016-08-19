@@ -40,9 +40,6 @@ get_header(); ?>
 											)
 										); ?>
 									</article>
-									<div class="freenity-tags"><?php echo get_the_tag_list( '<i class="fa fa-tags"></i>', ', ', '' ); ?></div>
-									<div class="freenity-category"><?php echo __( 'In', 'freenity' ) . ' ';
-										the_category( ', ' ); ?></div>
 									<?php if ( has_post_format( array( 'link', 'video' ) ) ) { ?>
 										<span class="freenity-info"><?php echo __( 'Posted by', 'freenity' ) . ' ';
 											the_author_posts_link();

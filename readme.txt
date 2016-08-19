@@ -1,10 +1,11 @@
 === Freenity ===
 Contributors: BestWebLayout, BestWebSoft
 Author URI: http://bestweblayout.com/
+Donate link: http://bestwebsoft.com/donate/
 Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, footer-widgets, post-formats, sticky-post, threaded-comments, theme-options, translation-ready
 Requires at least: 4.2
-Tested up to: 4.5.2
-Stable tag: 1.4
+Tested up to: 4.6
+Stable tag: 1.5
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Freenity WordPress Theme, Copyright 2016 BestWebLayout.com
@@ -107,6 +108,9 @@ Change the language in the admin settings screen. Settings > General > Site Lang
 
 == Changelog ==
 
+= V1.5 - 19.08.2016 =
+* Update : All functionality for WordPress 4.6 was updated.
+
 = V1.4 - 14.06.2016 =
 * Update: Security of saved and displayed data has been improved.
 * Update: Back-compatibility of title-tag was removed.
@@ -130,6 +134,9 @@ Change the language in the admin settings screen. Settings > General > Site Lang
 * Release of Freenity theme
 
 == Upgrade Notice ==
+
+= V1.5 =
+* The compatibility with new WordPress version updated.
 
 = V1.4 =
 Security of saved and displayed data has been improved. Back-compatibility of title-tag was removed. Plugin Territory functionality was removed. The theme has been tested for the compatibility with WordPress v.4.5.2.

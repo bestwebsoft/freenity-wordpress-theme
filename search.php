@@ -19,8 +19,7 @@ get_header(); ?>
 								<h2 class="title-article">
 									<a href="<?php echo esc_url( get_the_permalink() ); ?>" rel="bookmark" title="<?php the_title_attribute( array( 'before' => __( 'Permalink to ', 'freenity' ), 'after' => '' ) ); ?>"><?php the_title(); ?></a></h2>
 								<div class="freenity-entry">
-									<span class="freenity-author freenity-author-search"><?php the_author_posts_link(); ?></span>
-									<span class="freenity-entry-date"><?php echo '&nbsp;- ' . get_the_date(); ?></span>
+									<span class="freenity-author"><?php the_author_posts_link(); ?></span>&nbsp;-&nbsp;<span class="freenity-entry-date"><a href="<?php echo esc_url( get_the_permalink() ); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_date(); ?></a></span>
 									<span class="freenity-edit"><?php edit_post_link( ' | ' . __( 'Edit', 'freenity' ) ); ?></span>
 									<div class='post-image-search'> <?php the_post_thumbnail(); ?> </div>
 									<?php if ( has_post_thumbnail() ) {
@@ -38,10 +37,16 @@ get_header(); ?>
 										); ?>
 									</div>
 									<div class="freenity-clear"></div>
-									<div class="freenity-tags"><?php echo get_the_tag_list( '<i class="fa fa-tags"></i>', ', ', '' ); ?></div>
-									<div class="freenity-category"><?php echo __( 'In', 'freenity' ) . ' ';
-										the_category( ', ' ); ?></div>
-									<?php if ( has_post_format( array( 'link', 'video' ) ) ) { ?>
+									<?php if ( has_tag() ) { ?>
+										<div class="freenity-tags"><?php echo get_the_tag_list( '<i class="fa fa-tags"></i>', ', ', '' ); ?></div>
+									<?php }
+									if ( has_category() ) { ?>
+										<div class="freenity-category">
+											<?php echo __( 'In', 'freenity' ) . ' ';
+											the_category( ', ' ); ?>
+										</div>
+									<?php }
+									if ( has_post_format( array( 'link', 'video' ) ) ) { ?>
 										<span class="freenity-info"><?php echo __( 'Posted by', 'freenity' ) . ' ';
 											the_author_posts_link();
 											echo ' ' . __( 'on', 'freenity' ) . ' ';

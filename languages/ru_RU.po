@@ -1,20 +1,24 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Freenity\n"
-"POT-Creation-Date: 2016-06-14 12:41+0300\n"
-"PO-Revision-Date: 2016-06-14 12:45+0300\n"
+"Project-Id-Version: Freenity v1.5\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2016-08-19 17:51+0300\n"
+"PO-Revision-Date: \n"
 "Last-Translator: \n"
-"Language-Team: bestwebsoft.com <wp_theme@bestwebsoft.com>\n"
-"Language: ru_RU\n"
+"Language-Team: BestWebSoft <wp_theme@bestwebsoft.com>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.4\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;esc_attr__;_nx:4c,1,2;_x:1,2c\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:14
@@ -29,94 +33,94 @@ msgstr "Страница, которую Вы ищите, не найдена. �
 msgid "Permalink to "
 msgstr "Ссылка на "
 
-#: archive.php:30 archive.php:59 functions.php:164 functions.php:174
-#: functions.php:186 image.php:24 index.php:23 index.php:53 page.php:27
-#: page.php:53 search.php:24 search.php:51 single.php:24 single.php:50
+#: archive.php:30 archive.php:63 functions.php:164 functions.php:174
+#: functions.php:186 image.php:24 index.php:23 index.php:59 page.php:27
+#: page.php:50 search.php:24 search.php:57 single.php:24 single.php:56
 msgid "Edit"
 msgstr "Редактировать"
 
-#: archive.php:48 index.php:44 page.php:44 search.php:42 single.php:41
+#: archive.php:51 index.php:48 search.php:46 single.php:45
 msgid "In"
 msgstr "В"
 
-#: archive.php:53 index.php:47 page.php:47 search.php:45 single.php:44
+#: archive.php:57 index.php:53 page.php:44 search.php:51 single.php:50
 msgid "Posted by"
 msgstr "Опубликовано"
 
-#: archive.php:55 index.php:49 page.php:49 search.php:47 single.php:46
+#: archive.php:59 index.php:55 page.php:46 search.php:53 single.php:52
 msgid "on"
 msgstr "в "
 
-#: archive.php:57 index.php:51 page.php:51 search.php:49 single.php:48
+#: archive.php:61 index.php:57 page.php:48 search.php:55 single.php:54
 msgid "in"
 msgstr "в"
 
 #: comments.php:18
 #, php-format
-msgid "One response to &nbsp;&ldquo;%2$s&rdquo;"
-msgid_plural "%1$s responses to &nbsp;&ldquo;%2$s&rdquo;"
-msgstr[0] "%1$s ответ на&nbsp &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s ответа на&nbsp&ldquo;%2$s&rdquo;"
-msgstr[2] "%1$s ответов на&nbsp&ldquo;%2$s&rdquo;"
+msgid "One response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s ответ на  &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s ответа на &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s ответов на &ldquo;%2$s&rdquo;"
 
-#: comments.php:28
+#: comments.php:27
 msgid "Reply"
 msgstr "Ответить"
 
-#: comments.php:39
+#: comments.php:37
 msgid "Previous Comments"
 msgstr "Предыдущие комментарии"
 
-#: comments.php:40
+#: comments.php:38
 msgid "Next Comments"
 msgstr "Следующие комментарии"
 
-#: comments.php:45
+#: comments.php:43
 msgid "Comments are closed."
 msgstr "Комментарии закрыты."
 
-#: comments.php:50
+#: comments.php:48
 msgid "Name:"
 msgstr "Имя:"
 
-#: comments.php:51
+#: comments.php:49
 msgid "Please enter your full name..."
 msgstr "Пожалуйста, введите Ваше имя..."
 
-#: comments.php:52
+#: comments.php:50
 msgid "Email:"
 msgstr "Электронная почта:"
 
-#: comments.php:53
+#: comments.php:51
 msgid "Please enter your email address..."
 msgstr "Пожалуйста, введите Вашу электронную почту..."
 
-#: comments.php:54
+#: comments.php:52
 msgid "Website:"
 msgstr "Веб-сайт:"
 
-#: comments.php:55
+#: comments.php:53
 msgid "Please enter your website url..."
 msgstr "Пожалуйста, введите ссылку на ваш сайт..."
 
-#: comments.php:60
+#: comments.php:58
 msgid "Post comment"
 msgstr "Комментировать"
 
-#: comments.php:62
+#: comments.php:60
 msgid "Leave a Reply"
 msgstr "Оставить ответ"
 
-#: comments.php:64
+#: comments.php:62
 msgid "Your email address will not be published. Required fields are marked"
 msgstr ""
 "Ваш адрес электронной почты не будет опубликован. Обязательные поля помечены"
 
-#: comments.php:68
+#: comments.php:66
 msgid "Comment:"
 msgstr "Комментарий:"
 
-#: comments.php:69
+#: comments.php:67
 msgid "Please enter your message..."
 msgstr "Пожалуйста, введите ваше сообщение..."
 
@@ -307,15 +311,15 @@ msgstr "Предыдущее"
 msgid "Next"
 msgstr "Следующее"
 
-#: image.php:94 page.php:65 single.php:62
+#: image.php:94 page.php:62 single.php:68
 msgid "Author:"
 msgstr "Автор:"
 
-#: image.php:102 page.php:73 single.php:70
+#: image.php:102 page.php:70 single.php:76
 msgid "Follow"
 msgstr "Следуйте за"
 
-#: image.php:102 page.php:73 single.php:70
+#: image.php:102 page.php:70 single.php:76
 msgid "on "
 msgstr "в "
 
@@ -326,6 +330,10 @@ msgstr "Читать далее"
 #: search.php:15
 msgid "Search Results for:"
 msgstr "Результаты поиска для:"
+
+#: searchform.php:9
+msgid "Search"
+msgstr "Поиск"
 
 #~ msgid "Copyright"
 #~ msgstr "Авторские права"
@@ -374,9 +382,6 @@ msgstr "Результаты поиска для:"
 
 #~ msgid "Title right:"
 #~ msgstr "Заголовок справа:"
-
-#~ msgid "Search"
-#~ msgstr "Поиск"
 
 #~ msgid "Logo"
 #~ msgstr "Логотип"

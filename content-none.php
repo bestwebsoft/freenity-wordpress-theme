@@ -15,9 +15,9 @@
 		<p><?php printf( __( 'Ready to publish your first post?', 'freenity' ) . '<a href="%1$s">' . __( 'Get started here.', 'freenity' ) . '</a>', esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
 	<?php } elseif ( is_search() ) { ?>
 		<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with different keywords.', 'freenity' ); ?></p>
-		<?php get_search_form(); ?>
-	<?php } else { ?>
+		<?php get_search_form();
+	} else { ?>
 		<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'freenity' ); ?></p>
-		<?php get_search_form(); ?>
-	<?php } ?>
+		<?php get_search_form();
+	} ?>
 </div><!-- .page-content -->

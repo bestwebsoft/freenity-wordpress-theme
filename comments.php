@@ -15,24 +15,22 @@ if ( post_password_required() ) {
 	<div id="comments" class="comments-area">
 		<?php if ( have_comments() ) { ?>
 			<h2 class="comments-title">
-				<?php printf( _n( 'One response to &nbsp;&ldquo;%2$s&rdquo;', '%1$s responses to &nbsp;&ldquo;%2$s&rdquo;', get_comments_number(), 'freenity' ), number_format_i18n( get_comments_number() ), get_the_title() ); ?>
+				<?php printf( _n( 'One response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'freenity' ), number_format_i18n( get_comments_number() ), get_the_title() ); ?>
 			</h2>
 			<ul class="comment-list">
-				<?php wp_list_comments(
-					array(
-						'walker'            => null,
-						'max_depth'         => 10,
-						'style'             => 'ul',
-						'callback'          => 'freenity_comment',
-						'type'              => 'all',
-						'reply_text'        => __( 'Reply', 'freenity' ) . '&nbsp;' . '<i class="fa fa-share"></i>',
-						'page'              => '',
-						'per_page'          => 5,
-						'avatar_size'       => 50,
-						'reverse_top_level' => false,
-						'format'            => 'html5', // or 'xhtml' if no 'HTML5' theme support
-					)
-				); ?>
+				<?php wp_list_comments( array(
+					'walker'            => null,
+					'max_depth'         => 10,
+					'style'             => 'ul',
+					'callback'          => 'freenity_comment',
+					'type'              => 'all',
+					'reply_text'        => __( 'Reply', 'freenity' ) . '&nbsp;' . '<i class="fa fa-share"></i>',
+					'page'              => '',
+					'per_page'          => 5,
+					'avatar_size'       => 50,
+					'reverse_top_level' => false,
+					'format'            => 'html5', // or 'xhtml' if no 'HTML5' theme support
+				) ); ?>
 			</ul><!-- .comment-list -->
 			<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) { ?>
 				<div class="freenity-another-comments">
